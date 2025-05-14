@@ -1,0 +1,1 @@
+How to make dynamic apps using desktop using Delphi and BPL (Borland Package Library), so we dont have to make installer, just make BPL's and 1 main Apps (Host App), the desktop can be deployed anywhere even using RESTAPI
