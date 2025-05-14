@@ -1,0 +1,54 @@
+unit uMain;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, PluginIntf;
+
+type
+  TForm1 = class(TForm)
+    btnLoadPackage: TButton;
+    procedure btnLoadPackageClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+type
+  TCreateFormFunc = function: TForm; stdcall;
+  TSetConnectionProc = procedure(AConnection: TADOConnection); stdcall;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm1.btnLoadPackageClick(Sender: TObject);
+var
+  BPLHandle: HMODULE;
+  CreateFormFunc: TCreateFormFunc;
+  SetConnectionProc: TSetConnectionProc;
+  Form: TForm;
+begin
+  BPLHandle := LoadPackage('E:\Package\TestPkg.bpl');
+
+  @SetConnectionProc := GetProcAddress(BPLHandle, 'SetMainConnection');
+  if Assigned(SetConnectionProc) then
+    SetConnectionProc(ADOConnection1); // your main connection
+
+  @CreateFormFunc := GetProcAddress(BPLHandle, 'CreateForm');
+  if Assigned(CreateFormFunc) then
+  begin
+    Form := CreateFormFunc();
+    Form.Show;
+  end
+  else
+    ShowMessage('Could not find CreateForm');
+end;
+
+
+end.

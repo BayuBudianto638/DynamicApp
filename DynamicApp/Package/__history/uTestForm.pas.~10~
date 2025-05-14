@@ -1,0 +1,33 @@
+unit uTestForm;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, PluginIntf;
+
+type
+  TfrmTestPkg = class(TForm)
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+    procedure ShowForm;
+  end;
+
+var
+  frmTestPkg: TfrmTestPkg;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmTestPkg.ShowForm;
+begin
+  Self.Show;
+end;
+
+initialization
+RegisterClass(TfrmTestPkg);
+  RegisterClassAlias(TfrmTestPkg, 'TfrmTestPkg');
+end.

@@ -1,0 +1,48 @@
+unit uTestForm;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, PluginIntf, Vcl.StdCtrls, Data.DB,
+  Data.Win.ADODB;
+
+type
+  TfrmTestPkg = class(TForm)
+    Button1: TButton;
+    ADOQuery1: TADOQuery;
+    procedure Button1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+    //procedure ShowForm;
+  end;
+
+var
+  frmTestPkg: TfrmTestPkg;
+   MainADOConnection: TADOConnection = nil;
+
+procedure SetMainConnection(AConnection: TADOConnection); stdcall;
+function CreateForm: TForm; stdcall;
+
+
+implementation
+
+{$R *.dfm}
+
+function CreateForm: TForm;
+begin
+  Result := TfrmTestPkg.Create(nil);
+end;
+
+exports
+  CreateForm;
+
+
+procedure TfrmTestPkg.Button1Click(Sender: TObject);
+begin
+  Showmessage('Hello World');
+end;
+
+end.

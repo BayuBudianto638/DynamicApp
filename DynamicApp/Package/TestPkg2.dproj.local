@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2025/05/14 19:37:47.540,=rtl.dcp</Transaction>
+    <Transaction>2025/05/14 19:38:14.165,C:\Users\radam\OneDrive\Documents\Embarcadero\Studio\Projects\DynamicApp\Package\TestPkg2.dproj=C:\Users\radam\OneDrive\Documents\Embarcadero\Studio\Projects\Package1.dproj</Transaction>
+    <Transaction>2025/05/14 19:38:24.663,=C:\Users\radam\OneDrive\Documents\Embarcadero\Studio\Projects\DynamicApp\Package\Unit2.pas</Transaction>
+    <Transaction>2025/05/14 19:38:38.313,C:\Users\radam\OneDrive\Documents\Embarcadero\Studio\Projects\DynamicApp\Package\uTestForm2.pas=C:\Users\radam\OneDrive\Documents\Embarcadero\Studio\Projects\DynamicApp\Package\Unit2.pas</Transaction>
+    <Transaction>2025/05/14 19:38:38.313,C:\Users\radam\OneDrive\Documents\Embarcadero\Studio\Projects\DynamicApp\Package\uTestForm2.dfm=C:\Users\radam\OneDrive\Documents\Embarcadero\Studio\Projects\DynamicApp\Package\Unit2.dfm</Transaction>
+    <Transaction>2025/05/14 19:39:43.290,=vcl.dcp</Transaction>
+    <Transaction>2025/05/14 19:42:18.731,=dbrtl.dcp</Transaction>
+    <Transaction>2025/05/14 19:42:18.829,=adortl.dcp</Transaction>
+  </Transactions>
+</BorlandProject>

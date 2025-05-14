@@ -1,0 +1,60 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{ACD09F89-4F1C-4266-82D8-4023F0B5A02E}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="pDynamicApp.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Package\TestPkg.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Package\TestPkg2.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="pDynamicApp">
+        <MSBuild Projects="pDynamicApp.dproj"/>
+    </Target>
+    <Target Name="pDynamicApp:Clean">
+        <MSBuild Projects="pDynamicApp.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="pDynamicApp:Make">
+        <MSBuild Projects="pDynamicApp.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TestPkg">
+        <MSBuild Projects="Package\TestPkg.dproj"/>
+    </Target>
+    <Target Name="TestPkg:Clean">
+        <MSBuild Projects="Package\TestPkg.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TestPkg:Make">
+        <MSBuild Projects="Package\TestPkg.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TestPkg2">
+        <MSBuild Projects="Package\TestPkg2.dproj"/>
+    </Target>
+    <Target Name="TestPkg2:Clean">
+        <MSBuild Projects="Package\TestPkg2.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TestPkg2:Make">
+        <MSBuild Projects="Package\TestPkg2.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="pDynamicApp;TestPkg;TestPkg2"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="pDynamicApp:Clean;TestPkg:Clean;TestPkg2:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="pDynamicApp:Make;TestPkg:Make;TestPkg2:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

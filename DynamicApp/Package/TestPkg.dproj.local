@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2025/05/14 15:49:53.000.385,=rtl.dcp</Transaction>
+    <Transaction>2025/05/14 15:50:28.000.182,C:\Users\radam\OneDrive\Documents\Embarcadero\Studio\Projects\Package1.dproj=C:\Users\radam\OneDrive\Documents\Embarcadero\Studio\Projects\DynamicApp\Package\TestPkg.dproj</Transaction>
+    <Transaction>2025/05/14 15:50:55.000.946,=C:\Users\radam\OneDrive\Documents\Embarcadero\Studio\Projects\DynamicApp\Package\Unit2.pas</Transaction>
+    <Transaction>2025/05/14 15:51:14.000.467,C:\Users\radam\OneDrive\Documents\Embarcadero\Studio\Projects\DynamicApp\Package\Unit2.dfm=C:\Users\radam\OneDrive\Documents\Embarcadero\Studio\Projects\DynamicApp\Package\uTestForm.dfm</Transaction>
+    <Transaction>2025/05/14 15:51:14.000.467,C:\Users\radam\OneDrive\Documents\Embarcadero\Studio\Projects\DynamicApp\Package\Unit2.pas=C:\Users\radam\OneDrive\Documents\Embarcadero\Studio\Projects\DynamicApp\Package\uTestForm.pas</Transaction>
+    <Transaction>2025/05/14 16:40:46.000.474,=vcl.dcp</Transaction>
+    <Transaction>2025/05/14 16:52:11.000.261,=C:\Users\radam\OneDrive\Documents\Embarcadero\Studio\Projects\DynamicApp\PluginIntf.pas</Transaction>
+    <Transaction>2025/05/14 16:54:04.000.368,=dbrtl.dcp</Transaction>
+    <Transaction>2025/05/14 18:46:22.610,C:\Users\radam\OneDrive\Documents\Embarcadero\Studio\Projects\DynamicApp\Package\uTestForm.pas=</Transaction>
+    <Transaction>2025/05/14 18:46:55.484,=C:\Users\radam\OneDrive\Documents\Embarcadero\Studio\Projects\DynamicApp\Package\uTestForm.pas</Transaction>
+    <Transaction>2025/05/14 19:22:01.616,=adortl.dcp</Transaction>
+    <Transaction>2025/05/14 19:32:49.525,=vclwinx.dcp</Transaction>
+    <Transaction>2025/05/14 19:32:49.558,=vcldb.dcp</Transaction>
+  </Transactions>
+</BorlandProject>

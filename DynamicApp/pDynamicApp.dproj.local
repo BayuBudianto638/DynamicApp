@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2025/05/14 15:41:46.000.054,=C:\Users\radam\OneDrive\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2025/05/14 15:42:22.000.822,C:\Users\radam\OneDrive\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\radam\OneDrive\Documents\Embarcadero\Studio\Projects\DynamicApp\uMain.pas</Transaction>
+    <Transaction>2025/05/14 15:42:22.000.822,C:\Users\radam\OneDrive\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\radam\OneDrive\Documents\Embarcadero\Studio\Projects\DynamicApp\uMain.dfm</Transaction>
+    <Transaction>2025/05/14 15:42:32.000.142,C:\Users\radam\OneDrive\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\radam\OneDrive\Documents\Embarcadero\Studio\Projects\DynamicApp\pDynamicApp.dproj</Transaction>
+    <Transaction>2025/05/14 15:59:13.000.880,=C:\Users\radam\OneDrive\Documents\Embarcadero\Studio\Projects\DynamicApp\Unit1.pas</Transaction>
+    <Transaction>2025/05/14 15:59:34.000.471,C:\Users\radam\OneDrive\Documents\Embarcadero\Studio\Projects\DynamicApp\Unit1.pas=C:\Users\radam\OneDrive\Documents\Embarcadero\Studio\Projects\DynamicApp\PluginIntf.pas</Transaction>
+  </Transactions>
+</BorlandProject>
